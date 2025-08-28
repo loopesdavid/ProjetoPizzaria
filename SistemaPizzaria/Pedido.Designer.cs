@@ -57,6 +57,7 @@
             this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // chkBorda
             // 
@@ -73,7 +74,7 @@
             this.cmbTamanhoPizza.FormattingEnabled = true;
             this.cmbTamanhoPizza.Location = new System.Drawing.Point(35, 36);
             this.cmbTamanhoPizza.Name = "cmbTamanhoPizza";
-            this.cmbTamanhoPizza.Size = new System.Drawing.Size(121, 21);
+            this.cmbTamanhoPizza.Size = new System.Drawing.Size(129, 21);
             this.cmbTamanhoPizza.TabIndex = 2;
             this.cmbTamanhoPizza.Text = "TAMANHO DA PIZZA";
             // 
@@ -223,6 +224,7 @@
             this.Controls.Add(this.btnNovo);
             this.Name = "Pedido";
             this.Text = "Pedido";
+            this.Load += new System.EventHandler(this.Pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
             this.grpOpcionais.ResumeLayout(false);
             this.grpOpcionais.PerformLayout();
